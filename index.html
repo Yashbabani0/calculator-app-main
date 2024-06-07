@@ -1,26 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Calculator app</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Calculator app</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        position: absolute;
+        bottom: 2%;
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="theme_selecter">
+        <div class="headind">
+          <h4>Calc</h4>
+        </div>
+        <div class="theme_options">
+          <h6>THEME</h6>
+          <div class="options">
+            <div class="toggle_number">
+              <div>1</div>
+              <div>2</div>
+              <div>3</div>
+            </div>
+            <div class="toggle"></div>
+          </div>
+        </div>
+      </div>
+      <div class="display">
+        <input class="display_input" readonly />
+      </div>
+      <div class="input_keboadrd">
+        <div class="line line1">
+          <div class="number_input">7</div>
+          <div class="number_input">8</div>
+          <div class="number_input">9</div>
+          <div class="del_key">DEL</div>
+        </div>
+        <div class="line line2">
+          <div class="number_input">4</div>
+          <div class="number_input">5</div>
+          <div class="number_input">6</div>
+          <div class="number_input">+</div>
+        </div>
+        <div class="line line3">
+          <div class="number_input">1</div>
+          <div class="number_input">2</div>
+          <div class="number_input">3</div>
+          <div class="number_input">-</div>
+        </div>
+        <div class="line line4">
+          <div class="number_input">.</div>
+          <div class="number_input">0</div>
+          <div class="number_input">/</div>
+          <div class="number_input">x</div>
+        </div>
+        <div class="line line5">
+          <div class="line5_input_reset">RESET</div>
+          <div class="line5_input_epualto">=</div>
+        </div>
+      </div>
+    </main>
 
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/Yashbabani0">Yash Babani</a>.
+    </div>
+  </body>
 </html>
