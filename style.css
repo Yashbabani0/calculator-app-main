@@ -38,7 +38,6 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 header {
   width: 100%;
@@ -142,6 +141,67 @@ label[for="toggle3"] {
   width: 100%;
   height: 20em;
   margin-top: 3em;
-  background-color: var(--Very-dark-desaturated-blue-toggle-background-keypad-background);
+  background-color: var(
+    --Very-dark-desaturated-blue-toggle-background-keypad-background
+  );
   border-radius: 0.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+.line {
+  display: flex;
+  gap: 0.8em;
+}
+input[type="button"] {
+  width: 3em;
+  height: 2em;
+  font-size: 1.4em;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  font-weight: 900;
+}
+.general_button {
+  background-color: var(--Light-grayish-orange-key-background);
+  color: var(--Very-dark-grayish-blue);
+  border-radius: 0.2em;
+  transition: 0.3s ease-in-out;
+}
+.general_button:hover {
+  background-color: white;
+}
+.delete_key {
+  background-color: var(--Desaturated-dark-blue-key-background);
+  border: none;
+  border-radius: 0.2em;
+  box-shadow: 0px 5px 5px var(--Desaturated-dark-blue-key-shadow);
+  color: var(--Light-grayish-orange-key-background);
+}
+.reset_key {
+  min-width: 6.5em;
+  letter-spacing: 1px;
+  background-color: var(--Desaturated-dark-blue-key-background);
+  border: none;
+  border-radius: 0.2em;
+  box-shadow: 0px 5px 5px var(--Desaturated-dark-blue-key-shadow);
+  color: var(--Light-grayish-orange-key-background);
+  transition: 0.3s ease-in-out;
+}
+.reset_key:hover,
+.delete_key:hover {
+  background-color: hsl(225, 21%, 56%);
+  opacity: 0.8;
+}
+.equal_key {
+  min-width: 6.5em;
+  background-color: var(--Red-key-background-toggle);
+  color: white;
+  border: none;
+  border-radius: 0.2em;
+  opacity: 0.9;
+}
+.equal_key:hover {
+  background-color: hsl(6, 59%, 56%);
 }
