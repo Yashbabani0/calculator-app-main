@@ -31,55 +31,24 @@
   </head>
   <body>
     <main>
-      <div class="theme_selecter">
-        <div class="headind">
-          <h4>Calc</h4>
-        </div>
-        <div class="theme_options">
-          <h6>THEME</h6>
-          <div class="options">
-            <div class="toggle_number">
-              <div>1</div>
-              <div>2</div>
-              <div>3</div>
+      <header>
+        <h4>CALC</h4>
+        <div class="option_selector_name">
+          <b>THEME</b>
+          <div class="options_selector">
+            <div class="option_number">
+              <label for="toggle1">1</label>
+              <label for="toggle2">2</label>
+              <label for="toggle3">3</label>
             </div>
-            <div class="toggle"></div>
+            <div class="toggle">
+              <input type="checkbox" name="toggle1" id="toggle1" />
+              <input type="checkbox" name="toggle2" id="toggle2" />
+              <input type="checkbox" name="toggle3" id="toggle3" />
+            </div>
           </div>
         </div>
-      </div>
-      <div class="display">
-        <input class="display_input" readonly />
-      </div>
-      <div class="input_keboadrd">
-        <div class="line line1">
-          <div class="number_input">7</div>
-          <div class="number_input">8</div>
-          <div class="number_input">9</div>
-          <div class="del_key">DEL</div>
-        </div>
-        <div class="line line2">
-          <div class="number_input">4</div>
-          <div class="number_input">5</div>
-          <div class="number_input">6</div>
-          <div class="number_input">+</div>
-        </div>
-        <div class="line line3">
-          <div class="number_input">1</div>
-          <div class="number_input">2</div>
-          <div class="number_input">3</div>
-          <div class="number_input">-</div>
-        </div>
-        <div class="line line4">
-          <div class="number_input">.</div>
-          <div class="number_input">0</div>
-          <div class="number_input">/</div>
-          <div class="number_input">x</div>
-        </div>
-        <div class="line line5">
-          <div class="line5_input_reset">RESET</div>
-          <div class="line5_input_epualto">=</div>
-        </div>
-      </div>
+      </header>
     </main>
 
     <div class="attribution">

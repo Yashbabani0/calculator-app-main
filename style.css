@@ -33,9 +33,13 @@ body {
 }
 main {
   width: 15em;
-  height: 16em;
+  height: 15em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-.theme_selecter {
+header {
   width: 100%;
   height: 2em;
   display: flex;
@@ -43,143 +47,15 @@ main {
   justify-content: space-between;
   color: white;
 }
-h4 {
+.option_selector_name {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  letter-spacing: 1px;
+}
+.option_selector_name b {
   font-size: 0.8em;
 }
-h6 {
-  font-size: 0.5em;
-}
-.theme_options {
-  display: flex;
-  gap: 0.6em;
-  align-items: center;
-}
-.toggle_number {
-  font-size: 0.5em;
-  display: flex;
-}
-.display {
-  width: 100%;
-  height: 3em;
-  margin-bottom: 1em;
-}
-.display_input {
-  width: 100%;
-  height: 100%;
-  border-radius: 0.6em;
-  border: none;
-  color: white;
-  background-color: var(--Very-dark-desaturated-blue-screen-background);
-}
-.input_keboadrd {
-  background-color: var(
-    --Very-dark-desaturated-blue-toggle-background-keypad-background
-  );
-  border-radius: 0.4em;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 12em;
-}
-.line {
-  display: flex;
-  gap: 0.5em;
-  width: 100%;
-}
-.number_input {
-  min-width: 3em;
-  min-height: 1.6em;
-  border-radius: 0.3em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 0.5em;
-  background-color: var(--Light-grayish-orange-key-background);
-  color: var(--Very-dark-grayish-blue);
-  cursor: pointer;
-  transition: 0.3s ease-in-out;
-  box-shadow: 0px 5px var(--Grayish-orange-key-shadow);
-}
-.number_input:hover {
-  background-color: var(--White);
-}
-.line5 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  width: 100%;
-}
-.line5_input_reset {
-  width: 43%;
-  background-color: var(--Desaturated-dark-blue-key-background);
-  font-size: 0.6em;
-  padding: 0.6em;
-  border-radius: 0.5em;
-  color: var(--Light-grayish-orange-key-background);
-  transition: 0.4s ease-in-out;
-  cursor: pointer;
-  box-shadow: 0px 5px var(--Desaturated-dark-blue-key-shadow);
-}
-.line5_input_reset:hover {
-  background-color: hsl(225, 24%, 61%);
-}
-.line5_input_epualto {
-  width: 43%;
-  background-color: var(--Red-key-background-toggle);
-  font-size: 0.6em;
-  padding: 0.6em;
-  border-radius: 0.5em;
-  color: var(--Light-grayish-orange-key-background);
-  transition: 0.4s ease-in-out;
-  cursor: pointer;
-  box-shadow: 0px 5px var(--Dark-red-key-shadow);
-}
-.line5_input_epualto:hover {
-  background-color: hsl(6, 58%, 58%);
-}
-.del_key {
-  min-width: 3em;
-  min-height: 1.6em;
-  max-width: 3em;
-  max-height: 1.6em;
-  font-size: 1em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 0.3em;
-  background-color: var(--Desaturated-dark-blue-key-background);
-  color: var(--Light-grayish-orange-key-background);
-  transition: 0.4s ease-in-out;
-  cursor: pointer;
-  box-shadow: 0px 5px var(--Desaturated-dark-blue-key-shadow);
-}
-.del_key:hover {
-  background-color: hsl(225, 24%, 61%);
-}
-
-@media (max-width: 32em) {
-  main {
-    width: 10em;
-    height: 10em;
-  }
-  .display_input {
-    margin: auto;
-  }
-  .number_input {
-    min-width: 15%;
-  }
-  .del_key {
-    min-width: 18%;
-    font-size: 0.8em;
-  }
-
-  .line5_input_reset {
-  }
-
-  .line5_input_epualto {
-  }
-
+label {
+  margin-left: 0.3em;
 }
