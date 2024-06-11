@@ -162,12 +162,14 @@ input[type="button"] {
   cursor: pointer;
   transition: 0.3s ease-in-out;
   font-weight: 900;
+  border: none;
 }
 .general_button {
   background-color: var(--Light-grayish-orange-key-background);
   color: var(--Very-dark-grayish-blue);
   border-radius: 0.2em;
   transition: 0.3s ease-in-out;
+  box-shadow: 0px 5px 0px var(--Grayish-orange-key-shadow);
 }
 .general_button:hover {
   background-color: white;
@@ -176,7 +178,7 @@ input[type="button"] {
   background-color: var(--Desaturated-dark-blue-key-background);
   border: none;
   border-radius: 0.2em;
-  box-shadow: 0px 5px 5px var(--Desaturated-dark-blue-key-shadow);
+  box-shadow: 0px 5px 0px var(--Desaturated-dark-blue-key-shadow);
   color: var(--Light-grayish-orange-key-background);
 }
 .reset_key {
@@ -185,7 +187,7 @@ input[type="button"] {
   background-color: var(--Desaturated-dark-blue-key-background);
   border: none;
   border-radius: 0.2em;
-  box-shadow: 0px 5px 5px var(--Desaturated-dark-blue-key-shadow);
+  box-shadow: 0px 5px 0px var(--Desaturated-dark-blue-key-shadow);
   color: var(--Light-grayish-orange-key-background);
   transition: 0.3s ease-in-out;
 }
@@ -201,7 +203,93 @@ input[type="button"] {
   border: none;
   border-radius: 0.2em;
   opacity: 0.9;
+  box-shadow: 0px 5px 0 var(--Dark-red-key-shadow);
 }
 .equal_key:hover {
   background-color: hsl(6, 59%, 56%);
+}
+:root.theme2 {
+  --Very-dark-desaturated-blue-main-background: hsl(0, 0%, 90%);
+  --Very-dark-desaturated-blue-toggle-background-keypad-background: hsl(
+    0,
+    5%,
+    81%
+  );
+  --Very-dark-desaturated-blue-screen-background: hsl(0, 0%, 93%);
+  --Desaturated-dark-blue-key-background: hsl(185, 42%, 37%);
+  --Desaturated-dark-blue-key-shadow: hsl(185, 58%, 25%);
+  --Red-key-background-toggle: hsl(25, 98%, 40%);
+  --Dark-red-key-shadow: hsl(25, 99%, 27%);
+  --Light-grayish-orange-key-background: hsl(45, 7%, 89%);
+  --Grayish-orange-key-shadow: hsl(35, 11%, 61%);
+  --Very-dark-grayish-blue: hsl(60, 10%, 19%);
+  --White: hsl(0, 0%, 100%);
+}
+
+body.theme2 {
+  background-color: var(--Very-dark-desaturated-blue-main-background);
+}
+
+.display input.theme2 {
+  background-color: var(--Very-dark-desaturated-blue-screen-background);
+}
+
+.key_input.theme2 {
+  background-color: var(
+    --Very-dark-desaturated-blue-toggle-background-keypad-background
+  );
+}
+
+/* Theme 3 */
+:root.theme3 {
+  --Very-dark-desaturated-blue-main-background: hsl(268, 75%, 9%);
+  --Very-dark-desaturated-blue-toggle-background-keypad-background: hsl(
+    268,
+    71%,
+    12%
+  );
+  --Very-dark-desaturated-blue-screen-background: hsl(268, 71%, 12%);
+  --Desaturated-dark-blue-key-background: hsl(281, 89%, 26%);
+  --Desaturated-dark-blue-key-shadow: hsl(285, 91%, 52%);
+  --Red-key-background-toggle: hsl(176, 100%, 44%);
+  --Dark-red-key-shadow: hsl(177, 92%, 70%);
+  --Light-grayish-orange-key-background: hsl(268, 47%, 21%);
+  --Grayish-orange-key-shadow: hsl(290, 70%, 36%);
+  --Very-dark-grayish-blue: hsl(52, 100%, 62%);
+  --White: hsl(0, 0%, 100%);
+}
+
+body.theme3 {
+  background-color: var(--Very-dark-desaturated-blue-main-background);
+}
+
+.display input.theme3 {
+  background-color: var(--Very-dark-desaturated-blue-screen-background);
+}
+
+.key_input.theme3 {
+  background-color: var(
+    --Very-dark-desaturated-blue-toggle-background-keypad-background
+  );
+}
+
+.general_button.theme3 {
+  background-color: var(--Light-grayish-orange-key-background);
+  color: var(--Very-dark-grayish-blue);
+  box-shadow: 0 3px 0 var(--Grayish-orange-key-shadow);
+}
+
+.delete_key.theme3 {
+  background-color: var(--Desaturated-dark-blue-key-background);
+  box-shadow: 0 3px 0 var(--Desaturated-dark-blue-key-shadow);
+}
+
+.reset_key.theme3 {
+  background-color: var(--Desaturated-dark-blue-key-background);
+  box-shadow: 0 3px 0 var(--Desaturated-dark-blue-key-shadow);
+}
+
+.equal_key.theme3 {
+  background-color: var(--Red-key-background-toggle);
+  box-shadow: 0 3px 0 var(--Dark-red-key-shadow);
 }
