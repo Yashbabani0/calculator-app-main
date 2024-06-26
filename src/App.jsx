@@ -1,11 +1,10 @@
 import React from 'react'
+import Calculator from './Components/Calculator'
 
-function App() {
+export default function App() {
   return (
-    <dv>
-
-    </dv>
+    <div className='app theme1 min-h-screen flex flex-col justify-center items-center'>
+      <Calculator />
+    </div>
   )
 }
-
-export default App
