@@ -17,7 +17,7 @@ export default function Toggle() {
           </label>
         </div>
         <div className="toggle_options flex gap-1">
-          <input type="radio" name="theme" id="1" />
+          <input type="radio" name="theme" id="1" checked />
           <input type="radio" name="theme" id="2" />
           <input type="radio" name="theme" id="3" />
         </div>

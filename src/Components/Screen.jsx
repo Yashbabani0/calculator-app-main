@@ -9,7 +9,7 @@ export default function Screen() {
         type="text"
         name="screen"
         id="theme1_screen"
-        className="w-[95%] h-20 text-right p-2 text-2xl rounded tracking-widest"
+        className="w-[95%] h-20 text-right p-2 text-3xl rounded-lg tracking-widest"
         readOnly value={value}
       />
     </div>
