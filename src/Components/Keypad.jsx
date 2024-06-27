@@ -43,28 +43,28 @@ export default function Keypad({ value, setValue }) {
 
   return (
     <div className="flex justify-center items-center">
-      <div className="theme1_keypad w-[95%] h-[26em] rounded-lg p-4">
+      <div className="theme3_keypad w-[95%] h-[26em] rounded-lg p-4">
         <div className="line h-1/5 flex items-center justify-center gap-2">
           <input
-            className="theme1_generalbtn w-1/4 h-[70%] rounded-lg"
+            className="theme3_generalbtn w-1/4 h-[70%] rounded-lg"
             type="button"
             value="7"
             onClick={handleButtonClick}
           />
           <input
-            className="theme1_generalbtn w-1/4 h-[70%] rounded-lg"
+            className="theme3_generalbtn w-1/4 h-[70%] rounded-lg"
             type="button"
             value="8"
             onClick={handleButtonClick}
           />
           <input
-            className="theme1_generalbtn w-1/4 h-[70%] rounded-lg"
+            className="theme3_generalbtn w-1/4 h-[70%] rounded-lg"
             type="button"
             value="9"
             onClick={handleButtonClick}
           />
           <input
-            className="theme1_deletebtn w-1/4 h-[70%] rounded-lg"
+            className="theme3_deletebtn w-1/4 h-[70%] rounded-lg"
             type="button"
             value="DEL"
             onClick={handleDeleteClick}
@@ -72,25 +72,25 @@ export default function Keypad({ value, setValue }) {
         </div>
         <div className="line h-1/5 flex items-center justify-center gap-2">
           <input
-            className="theme1_generalbtn w-1/4 h-[70%] rounded-lg"
+            className="theme3_generalbtn w-1/4 h-[70%] rounded-lg"
             type="button"
             value="4"
             onClick={handleButtonClick}
           />
           <input
-            className="theme1_generalbtn w-1/4 h-[70%] rounded-lg"
+            className="theme3_generalbtn w-1/4 h-[70%] rounded-lg"
             type="button"
             value="5"
             onClick={handleButtonClick}
           />
           <input
-            className="theme1_generalbtn w-1/4 h-[70%] rounded-lg"
+            className="theme3_generalbtn w-1/4 h-[70%] rounded-lg"
             type="button"
             value="6"
             onClick={handleButtonClick}
           />
           <input
-            className="theme1_generalbtn w-1/4 h-[70%] rounded-lg"
+            className="theme3_generalbtn w-1/4 h-[70%] rounded-lg"
             type="button"
             value="+"
             onClick={handleButtonClick}
@@ -98,25 +98,25 @@ export default function Keypad({ value, setValue }) {
         </div>
         <div className="line h-1/5 flex items-center justify-center gap-2">
           <input
-            className="theme1_generalbtn w-1/4 h-[70%] rounded-lg"
+            className="theme3_generalbtn w-1/4 h-[70%] rounded-lg"
             type="button"
             value="1"
             onClick={handleButtonClick}
           />
           <input
-            className="theme1_generalbtn w-1/4 h-[70%] rounded-lg"
+            className="theme3_generalbtn w-1/4 h-[70%] rounded-lg"
             type="button"
             value="2"
             onClick={handleButtonClick}
           />
           <input
-            className="theme1_generalbtn w-1/4 h-[70%] rounded-lg"
+            className="theme3_generalbtn w-1/4 h-[70%] rounded-lg"
             type="button"
             value="3"
             onClick={handleButtonClick}
           />
           <input
-            className="theme1_generalbtn w-1/4 h-[70%] rounded-lg"
+            className="theme3_generalbtn w-1/4 h-[70%] rounded-lg"
             type="button"
             value="-"
             onClick={handleButtonClick}
@@ -124,25 +124,25 @@ export default function Keypad({ value, setValue }) {
         </div>
         <div className="line h-1/5 flex items-center justify-center gap-2">
           <input
-            className="theme1_generalbtn w-1/4 h-[70%] rounded-lg"
+            className="theme3_generalbtn w-1/4 h-[70%] rounded-lg"
             type="button"
             value="."
             onClick={handleButtonClick}
           />
           <input
-            className="theme1_generalbtn w-1/4 h-[70%] rounded-lg"
+            className="theme3_generalbtn w-1/4 h-[70%] rounded-lg"
             type="button"
             value="0"
             onClick={handleButtonClick}
           />
           <input
-            className="theme1_generalbtn w-1/4 h-[70%] rounded-lg"
+            className="theme3_generalbtn w-1/4 h-[70%] rounded-lg"
             type="button"
             value="/"
             onClick={handleButtonClick}
           />
           <input
-            className="theme1_generalbtn w-1/4 h-[70%] rounded-lg"
+            className="theme3_generalbtn w-1/4 h-[70%] rounded-lg"
             type="button"
             value="x"
             onClick={handleButtonClick}
@@ -150,13 +150,13 @@ export default function Keypad({ value, setValue }) {
         </div>
         <div className="line h-1/5 flex items-center justify-center gap-2">
           <input
-            className="theme1_resetbtn w-1/2 h-[70%] rounded-lg"
+            className="theme3_resetbtn w-1/2 h-[70%] rounded-lg"
             type="button"
             value="RESET"
             onClick={() => setValue("")} // Add reset functionality
           />
           <input
-            className="theme1_equalbtn w-1/2 h-[70%] rounded-lg"
+            className="theme3_equalbtn w-1/2 h-[70%] rounded-lg"
             type="button"
             value="="
             onClick={handleEqualClick} // Evaluate the expression

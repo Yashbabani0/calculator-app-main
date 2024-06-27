@@ -6,7 +6,7 @@ export default function Screen({ value }) {
       <input
         type="text"
         name="screen"
-        id="theme1_screen"
+        id="theme3_screen"
         className="w-[95%] h-20 text-right p-2 text-3xl rounded-lg tracking-widest"
         readOnly
         value={value}
