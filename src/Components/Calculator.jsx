@@ -1,16 +1,16 @@
 import React, { useState } from "react";
-import CalcuHeading from "./CalcuHeading";
 import Screen from "./Screen";
 import Keypad from "./Keypad";
+import CalcuHeading from "./CalcuHeading";
 
-export default function Calculator() {
+export default function Calculator({ setTheme, theme }) {
   const [value, setValue] = useState("");
 
   return (
-    <div className="calculator_body min-w-96 min-h-[36em] rounded">
-      <CalcuHeading />
-      <Screen value={value} />
-      <Keypad value={value} setValue={setValue} />
+    <div className="calculator">
+      <CalcuHeading setTheme={setTheme} theme={theme} />
+      <Screen value={value} theme={theme}/>
+      <Keypad value={value} setValue={setValue} theme={theme} />
     </div>
   );
-}
+} 
